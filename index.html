@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie List </title>
+</head>
+
+<body>
+    <header>
+        <h1>My Movie List</h1>
+    </header>
+    <main>
+
+        <fieldset>
+            <legend>New movie</legend>
+
+            <form id="moviesForm">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div>
+                    <label for="browser">Image</label>
+                    <input list="browsers" id="browser">
+                    <datalist id="browsers">
+                        <option value="Action">
+                        <option value="Adventure">
+                        <option value="Animation">
+                        <option value="Comedy">
+                        <option value="Detective">
+                        <option value="Fantasy">
+                        <option value="History">
+                        <option value="Horror">
+                        <option value="Musical">
+                        <option value="Pirate">
+                        <option value="Romantic">
+                        <option value="SCI-FI">
+                        <option value="War">
+                        <option value="Western">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="release">Release</label>
+                    <input type="number" id="release">
+                </div>
+
+
+                <input type="submit" value="Save" id="button">
+            </form>
+
+        </fieldset>
+        <table id="table">
+
+        </table>
+    </main>
+    <footer>
+        <p>all right reserved 2021&copy;ASAC</p>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
